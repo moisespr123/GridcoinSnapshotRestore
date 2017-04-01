@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -29,6 +30,7 @@ Partial Class Form1
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -58,7 +60,7 @@ Partial Class Form1
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(12, 51)
+        Me.Button2.Location = New System.Drawing.Point(12, 52)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(260, 23)
         Me.Button2.TabIndex = 3
@@ -72,7 +74,7 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(9, 78)
+        Me.Label2.Location = New System.Drawing.Point(9, 79)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(101, 13)
         Me.Label2.TabIndex = 4
@@ -81,17 +83,27 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(256, 78)
+        Me.Label3.Location = New System.Drawing.Point(256, 79)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(16, 13)
         Me.Label3.TabIndex = 5
-        Me.Label3.Text = "r1"
+        Me.Label3.Text = "r2"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(9, 101)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(252, 65)
+        Me.Label4.TabIndex = 6
+        Me.Label4.Text = resources.GetString("Label4.Text")
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 100)
+        Me.ClientSize = New System.Drawing.Size(294, 176)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button2)
@@ -113,4 +125,5 @@ Partial Class Form1
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
 End Class
